@@ -1,6 +1,6 @@
 import * as tmImage from "@teachablemachine/image";
 
-const URL = "https://teachablemachine.withgoogle.com/models/p0JKqIHxw/";
+const URL = "/model/";
 
 let model, webcam, maxPredictions;
 let modelLoaded = false; // نشون میده که مدل لود شده یا نه
