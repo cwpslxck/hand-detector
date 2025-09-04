@@ -29,33 +29,37 @@
         text-align: center;
       }
 
-      h1 {
-        font-size: 2.5rem;
-        color: #1e40af;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      #webcam {
+        width: 100%;
+        max-width: 500px;
       }
 
       #webcam canvas {
+        width: 100%;
+        aspect-ratio: 1/1;
         border-radius: 16px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        max-width: 100%;
-        height: auto;
+        object-fit: cover;
       }
 
       #label {
-        font-size: 1.5rem;
-        padding: 10px 20px;
+        font-size: 28px;
+        padding: 10px 15px;
+        min-height: 80px;
+        display: flex;
         height: 100px;
+        justify-content: center;
+        align-items: center;
       }
 
       #label.detect {
-        font-size: 4rem;
+        font-size: 80px;
       }
 
       .loader {
-        width: 48px;
-        height: 48px;
-        border: 5px solid #000;
+        width: 36px;
+        height: 36px;
+        border: 4px solid #000;
         border-bottom-color: transparent;
         border-radius: 50%;
         display: inline-block;
